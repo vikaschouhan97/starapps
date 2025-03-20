@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Mulish:wght@200&display=swap");
+
+* {
+  font-family: "Comfortaa", cursive;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffc1e3;
+  transition: background-color 0.5s ease;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 170px;
+}
+
+.aside {
+  position: relative;
+}
+
+.card {
+  flex: 1;
+  min-height: 300px;
+  max-width: 300px;
+  width: 100%;
+  margin: 200px 50px auto 50px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.color-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#pink-button {
+  background-color: rgba(255, 64, 129, 1);
+}
+
+#blue-button {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+#yellow-button {
+  background-color: rgba(255, 193, 7, 1);
+}
+
+.upload-image-text {
+  margin: 10px auto 20px auto;
+}
+
+.upload-instructions {
+  font-size: smaller;
+}
+
+.logo-button {
+  width: 300px;
+  margin-top: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 18px;
+  background-color: rgba(255, 64, 129, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: background-color 0.5s ease;
+}
+
+.logo-button:hover {
+  background-color: rgba(255, 102, 153, 1);
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+.upload-text {
+  margin-top: 15px;
+}
+
+.upload-instruction {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+img {
+  top: 0px;
+  padding: 20px;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.uploaded-image {
+  position: absolute;
+  object-fit: scale-down;
+  left: 50%;
+  top: 380px; /* Align it to the bottom of the parent */
+  transform: translateX(-50%);
+  max-width: 100px; /* Adjust this as needed */
+  max-height: 30px;
+}
